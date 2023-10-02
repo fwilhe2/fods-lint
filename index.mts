@@ -25,18 +25,18 @@ const formulaBadSample = ensureIsArray(
     ensureIsArray(
       parsedFods["office:document"]["office:body"]["office:spreadsheet"][
         "table:table"
-      ]
-    )[0]["table:table-row"]
-  )[2]["table:table-cell"]
+      ],
+    )[0]["table:table-row"],
+  )[2]["table:table-cell"],
 )[1]["@_table:formula"];
 const formulaGoodSample = ensureIsArray(
   ensureIsArray(
     ensureIsArray(
       parsedFods["office:document"]["office:body"]["office:spreadsheet"][
         "table:table"
-      ]
-    )[0]["table:table-row"]
-  )[3]["table:table-cell"]
+      ],
+    )[0]["table:table-row"],
+  )[3]["table:table-cell"],
 )[1]["@_table:formula"];
 
 export const LintResult = {
